@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Product</title>
+  </head>
+
+  <body>
+    <h1>Delete Product</h1>
+    <form method="POST" action="/employee/delete/<%= product.id %>">
+      <fieldset>
+        <legend>Delete Product</legend>
+
+        <ul>
+          Name: <%= product.username %>
+          <br />
+          Price: <%= product.price %>
+          <br />
+          Quantity: <%= product.quantity %>
+        </ul>
+
+        <h5>Are you sure to delete this Product?</h5>
+
+        <a href="/employee">Cancel</a>
+        <button type="submit">Confirm</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

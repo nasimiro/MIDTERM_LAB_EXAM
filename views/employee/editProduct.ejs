@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+  </head>
+
+  <body>
+    <h1>Update Product</h1>
+    <form method="POST">
+      <fieldset>
+        <legend>Update Product</legend>
+        <label for="name">name: </label>
+        <input type="text" value="<%= product.name %>" name="name" id="name" />
+        <br />
+        <br />
+
+        <label for="price">Price: </label>
+        <input
+          type="number"
+          value="<%= product.price %>"
+          name="price"
+          id="price"
+        />
+        <br />
+        <br />
+
+        <label for="quantity">Quantity: </label>
+        <input
+          type="number"
+          value="<%= product.quantity %>"
+          name="quantity"
+          id="quantity"
+        />
+        <br />
+        <br />
+
+        <button type="submit">Update the Product</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
