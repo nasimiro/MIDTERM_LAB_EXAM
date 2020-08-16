@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Employee</title>
+  </head>
+
+  <body>
+    <h1>Edit Employee</h1>
+    <form method="POST">
+      <fieldset>
+        <legend>Update user</legend>
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          value="<%= user.username %>"
+          name="username"
+          id="username"
+        />
+        <br />
+        <br />
+
+        <label for="Phone">name: </label>
+        <input type="text" value="<%= user.name %>" name="name" id="Phone" />
+        <br />
+        <br />
+
+        <label for="Phone">password: </label>
+        <input
+          type="text"
+          value="<%= user.password %>"
+          name="password"
+          id="Phone"
+        />
+        <br />
+        <br />
+
+        <label for="Phone">phone: </label>
+        <input type="text" value="<%= user.phone %>" name="phone" id="Phone" />
+        <br />
+        <br />
+
+        <button type="submit">Update the Employee</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

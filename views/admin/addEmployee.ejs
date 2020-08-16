@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Employee</title>
+  </head>
+  <body>
+    <h1>Add Employee</h1>
+    5tgb
+    <form method="POST">
+      <fieldset>
+        <legend>Add user</legend>
+        <% if(typeof error != 'undefined' && error) { %> <% error.forEach(err =>
+        { %>
+        <p style="color: red;"><%= err.msg %></p>
+        <% }) %> <% } %>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" />
+        <br />
+        <br />
+
+        <label for="Password">Password: </label>
+        <input type="password" name="password" id="Password" />
+        <br />
+        <br />
+
+        <label for="Phone">Phone: </label>
+        <input value="10101010101" type="text" name="phone" id="Phone" />
+        <br />
+        <br />
+
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <button type="submit">ADD Employee</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 
 const authController = require('./controllers/authController');
+const adminController = require('./controllers/adminController');
 
 // App initialization
 const app = express();
@@ -24,6 +25,7 @@ app.get('/', (req, res) => {
   res.json({ status: 'Server is up & running' });
 });
 app.use('/login', authController);
+app.use('/admin', adminController);
 
 // Server
 const PORT = 4000;
